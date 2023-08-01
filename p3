@@ -1,0 +1,231 @@
+3. a) Develop and demonstrate the usage of inline, internal and external 
+
+        Style sheet using CSS. 
+
+inline         
+
+ <!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+  <title>In-line CSS Style</title> 
+
+</head> 
+
+<body> 
+
+  <p style="color:purple; margin-left:20px">This is a first paragraph.</p> 
+
+  <div style="color:purple; font-size:16px; background-color:#FF6633;">This is a second paragraph.</div> 
+
+</body> 
+
+</html> 
+
+Internal 
+
+<!DOCTYPE html> 
+
+<html>										 
+
+<head>		 
+
+  <title>Internal CSS Style</title> 
+
+  <style type="text/css"> 
+
+    p { 
+
+     color:purple; 
+
+     margin-left:20px; 
+
+    } 
+
+    div{ 
+
+     color:purple; 
+
+     font-size:16px; 
+
+     background-color:#FF6633; 
+
+    } 
+
+  </style> 
+
+</head> 
+
+<body> 
+
+  <p>This is a first paragraph.</p> 
+
+  <div>This is a second paragraph.</div> 
+
+</body> 
+
+</html> 
+
+External 
+
+Create a new .css file with the text editor, and add the style rules. For example: 
+
+.xleftcol { 
+
+   float: left; 
+
+   width: 33%; 
+
+   background:#809900; 
+
+} 
+
+.xmiddlecol { 
+
+   float: left; 
+
+   width: 34%; 
+
+   background:#eff2df; 
+
+} 
+
+ 
+
+In the <head> section of your HTML sheet, add a reference to your external .css file right after <title> tag: 
+
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+
+ 
+
+/*CSS Style*/ 
+
+p { 
+
+  color:purple; 
+
+  margin-left:20px; 
+
+} 
+
+div{ 
+
+  color:purple; 
+
+  font-size:16px; 
+
+  background-color:#FF6633; 
+
+} 
+
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+  <title>External CSS Style</title> 
+
+  <link rel="stylesheet" type="text/css" href="style.css" /> 
+
+</head> 
+
+<body> 
+
+  <p>This is a first paragraph.</p> 
+
+  <div>This is a second paragraph.</div> 
+
+</body> 
+
+</html> 
+
+ 
+
+3 b) Write an HTML page that contains a selection box with a list of 5 
+
+        Countries. When the user selects a country, its capital should be printed 
+
+        Next in the list. Add CSS to customize the properties of the font of the 
+
+         Capital (color, bold and font size). 
+
+<html> 
+
+<head> 
+
+<title>WT Lab manual program no. 5</title> 
+
+</head> 
+
+<style>  
+
+h1 
+
+{ 
+
+color: red; 
+
+text-align: center; 
+
+} 
+
+.textbox1 
+
+{ 
+
+color: blue; 	 
+
+font-size: 30px; 
+
+font-weight: bold; 
+
+} 
+
+</style> 
+
+<body> 
+
+<center> 
+
+<h1> Select the country name to find its capital</h1> 
+
+<form name="myform"> 
+
+Select Country <select name="country" id="sbox1" onClick="myFunction()" required> 
+
+<option value=""></option> 
+
+<option value="NEW DELHI">INDIA</option> 
+
+<option value="CANBERRA">AUSTRALIA</option> 
+
+<option value="WASHINGTON D.C">AMERICA</option> 
+
+<option value="LONDON">UNITEDKINGDOM</option> 
+
+<option value="BERLIN">GERMANY</option> 
+
+</select><br><br> 
+
+Capital <input type="text" class="textbox1" id="sbox2"> 
+
+</form> 
+
+</center> 
+
+<script> 
+
+function myFunction() 
+
+{ var a=document.getElementById("sbox1").value;  
+
+document.getElementById("sbox2").value=a;  
+
+} 
+
+</script> </body> </html> 
+
+Output: 
