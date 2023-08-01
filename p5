@@ -1,0 +1,147 @@
+5. Write JavaScript to validate the following fields. 
+
+ 
+
+E-mail id (should not contain any invalid and must follow the standard pattern name@domain.com) 
+
+ 
+
+<html> 
+
+<body> 
+
+<script>   
+
+function validateemail()   
+
+{   
+
+var x=document.myform.email.value;   
+
+var atposition=x.indexOf("@");   
+
+var dotposition=x.lastIndexOf(".");   
+
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){   
+
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);   
+
+  return false;   
+
+  }   
+
+}   
+
+</script>   
+
+<body>   
+
+<form name="myform"  method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateemail();">  
+
+<table align="center"> 
+
+<br><br><br><br> 
+
+<h2 align="center">Email Validation</h2> 
+
+<br> 
+
+<tr>  
+
+ 
+
+<td align="right">Email:</td> 
+
+<td align="left"><input type="text" maxlength="50" size="30"name="email"></td> 
+
+</tr> 
+
+<tr> 
+
+<td></td> 
+
+<td><input type="submit" value="Submit" onClick="validateemail()"/></td> 
+
+</tr> 
+
+</table> </form> </body> </html> 
+
+ 
+
+ 
+
+Mobile Number (Phone number should contain 10 digits) 
+
+ 
+
+<html> 
+
+<head> 
+
+<title>PHONE NUMBER VALIDATION</title> 
+
+<script language="javascript"> 
+
+function phno() 
+
+{ 
+
+var ph=f.ph.value; 
+
+if(ph.length==10) 
+
+{ 
+
+if(isNaN(ph)) 
+
+alert("It is not a valid Phone number"); 
+
+else 
+
+alert("It is a valid Phone number"); 
+
+} 
+
+else 
+
+alert("Please enter a valid phone number"); 
+
+} 
+
+</script> 
+
+</head> 
+
+<body> 
+
+<form name="f"> 
+
+<table align="center"> 
+
+<br><br><br><br> 
+
+<h2 align="center">PHONE NUMBER VALIDATION</h2> 
+
+<br> 
+
+<tr> 
+
+<td align="right">PHONE NO:</td> 
+
+<td align="left"><input type="text" maxlength="15" size="30"name="ph"></td> 
+
+</tr> 
+
+<tr> 
+
+<td></td> 
+
+<td><input type="button" value="SUBMIT" onClick="phno()"/></td> 
+
+</tr> 
+
+</table> </form> </body> </html> 
+
+ 
+
+Output: 
