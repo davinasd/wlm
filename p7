@@ -1,0 +1,127 @@
+7. Develop and demonstrate JavaScript program for the following: 
+
+ 
+
+a) Input: A number n obtained using prompt Output: A multiplication table of numbers from 1 to 10 of n using alert 
+
+ 
+
+   <html> 
+
+ <head> 
+
+ 	<title> Multiplication Table </title> 
+
+ </head> 
+
+ <body> 
+
+ <script type="text/javascript"> 
+
+  
+
+var n=prompt("Enter positive value for n:  "); 
+
+if(!isNaN(n)) { 
+
+ var table=""; 
+
+ var number=""; 
+
+ for(i=1;i<=10;i++) { 
+
+ number = n * i; 
+
+ table += n + " * " + i + " = " + number + "\n"; 
+
+ } 
+
+ alert(table); 
+
+ } 
+
+ else { 
+
+ alert("Enter positive value"); 
+
+ n=prompt("Enter positive value for n: "," "); 
+
+} 
+
+document.write(n+" table values displayed using alert ..<br />"); 
+
+ 
+
+</script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Output: 
+
+ 
+
+ 
+
+ 
+
+ 
+
+b) Input: A number n obtained using prompt and add another number     using confirm Output: Sum of the entire n numbers using alert. 
+
+ 
+
+html> 
+
+ <head> 
+
+ 	<title> sum up the number </title> 
+
+ </head> 
+
+ <body> 
+
+ <script type="text/javascript"> 
+
+    function sum() 
+
+    { 
+
+        var res=0; 
+
+        var a=parseInt(prompt("enter the first number:")); 
+
+        res=res+a; 
+
+        while(confirm("add more number?")) 
+
+        { 
+
+            var c =parseInt(prompt("enter number:")); 
+
+            res= res + c; 
+
+        } 
+
+            alert(" the sum of the number is :"+res); 
+
+ 
+
+        } 
+
+ 
+
+        sum(); 
+
+    </script> 
+
+ 
+
+</body> 
+
+</html> 
+
+Output: 
