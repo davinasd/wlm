@@ -1,0 +1,194 @@
+Design the following static web pages required for an online book store web site 
+
+ 1) HOME PAGE: The static home page must contain three frames. 
+
+ 2) LOGIN PAGE  
+
+3) CATOLOGUE PAGE: The catalogue page should contain the details of all the books available. 
+
+1) HOME PAGE: The static home page must contain three frames.  
+
+Top frame: Logo and the college name and links to Home page, Login page, Registration page, Catalogue page and Cart page (the description of these pages will be given below).  
+
+Left frame : At least four links for navigation, which will display the catalogue of respective links. For e.g.: When you click the link “CSE” the catalogue for CSE Books should be displayed in the Right frame.  
+
+Right frame: The pages to the links in the left frame must be loaded here. Initially this page contains description of the web site. 
+
+ 
+
+index.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Online Book Store</title> 
+</head> 
+<frameset rows="15%,10%,*"> 
+<frameset cols="20%,*"> 
+<frame name="f11" src="logo.html" scrolling="no"></frame> 
+<frame name="f12" src="title.html" scrolling="no"></frame> 
+</frameset> 
+<frameset cols="20%,20%,20%,20%,*"> 
+<frame name="f21" src="home.html"></frame> 
+<frame name="f22" src="login.html"></frame> 
+<frame name="f23" src="reg.html"></frame> 
+<frame name="f24" src="cat.html"></frame> 
+<frame name="f25" src="cart.html"></frame> 
+</frameset> 
+<frameset cols="20%,*"> 
+<frame name="f31" src="branches.html"></frame> 
+<frame name="f32" src="homepage.html"></frame> 
+</frameset> 
+</frameset> 
+</html> 
+
+ 
+
+output: 
+
+ 
+
+ 
+
+ 
+
+home.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title></title> 
+</head> 
+<body> 
+<a href="homepage.html" target="f32">Home</a> 
+</body> 
+</html> 
+
+ 
+login.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title></title> 
+</head> 
+<body> 
+<a href="loginpage.html" target="f32">Login</a> 
+</body> 
+</html> 
+
+homepage.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title></title> 
+</head> 
+<body> 
+<p align="justify">Welcome to Online Book Store.<br>Here you find all types of books, magazines and national and international journals.</p> 
+</body> 
+</html> 
+
+ 
+
+out put : 
+
+ 
+
+ 
+
+loginpage.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title></title> 
+</head> 
+<body> 
+<form> 
+<table align="center" cellspacing="15px"> 
+<tr> 
+<td><b>Login</b></td> 
+<td><input type="text" name="uname" /></td> 
+</tr> 
+<tr> 
+<td><b>Password</b></td> 
+<td><input type="password" name="upwd" /></td> 
+</tr> 
+<tr> 
+<td colspan="2" align="center"> 
+<input type="submit" />&nbsp; &nbsp; 
+<input type="reset" /> 
+</td> 
+</tr> 
+</table> 
+</form> 
+</body> 
+</html 
+
+ 
+
+Output: 
+
+ 
+
+ 
+
+cat.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title></title> 
+</head> 
+<body> 
+<a href="catpage.html" target="f32">Catalogue</a> 
+</body> 
+</html> 
+
+ 
+catpage.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head> 
+<body> 
+<form> 
+<table cellspacing="10"> 
+<tr> 
+<td><img src="images/html5.jpg" width="100" height="100"></td> 
+<td> Title : HTML5 and CSS3 <br> 
+Author : Sasha Vodnik&nbsp; &nbsp;<br> </td> 
+<td>Rs. 700 /- </td> 
+<td><input type="image" src="images/addToCart.jpg" width="150" height="70"></td> 
+</tr> 
+<tr> 
+<td><img src="images/php.jpg" width="100" height="100"></td> 
+<td> Title : PHP and MYSQL <br> 
+Author : W. Jason Gilmore&nbsp; &nbsp;<br> </td> 
+<td>Rs. 650 /- </td> 
+<td><input type="image" src="images/addToCart.jpg" width="150" height="70"></td> 
+</tr> 
+<tr> 
+<td><img src="images/j2ee.jpg" width="100" height="100"></td> 
+<td> Title : The Complete Reference JAVA 2 <br> 
+Author : Herbert Schildt &nbsp; &nbsp;<br> </td> 
+<td>Rs. 850 /- </td> 
+<td><input type="image" src="images/addToCart.jpg" width="150" height="70"></td> 
+</tr> 
+</table> 
+</form> 
+</body> 
+</html> 
+
+ 
+
+out put: 
