@@ -1,0 +1,55 @@
+<?xml-stylesheet type="text/css" href="5.css" ?>
+<!DOCTYPE html>
+<html>
+<head>
+<h1> STUDENTS DESCRIPTION </h1>
+</head>
+<students>
+<student>
+<USN>USN : 1JB01CS001</USN>
+<name>NAME : CHETAN R</name>
+<college>COLLEGE : RIT</college>
+<branch>BRANCH : Computer Science and Engineering</branch>
+<year>YEAR : 2005</year>
+<e-mail>E-Mail : chetan@gmail.com</e-mail>
+</student>
+<student>
+<USN>USN : 1JB01CS002</USN>
+<name>NAME : AJAY</name>
+<college>COLLEGE : RIT</college>
+<branch>BRANCH : Information Science and Engineering</branch>
+<year>YEAR : 2007</year>
+<e-mail>E-Mail : ajay@gmail.com</e-mail>
+</student>
+<student>
+<USN>USN : 1JB07EC001</USN>
+<name>NAME : CHETAN</name>
+<college>COLLEGE : SJBIT</college>
+<branch>BRANCH : ECE</branch>
+<year>YEAR : 2007</year>
+<e-mail>E-Mail : chetan@gmail.com</e-mail>
+</student>
+</students>
+</html>
+5.css
+student{
+display:block; margin-top:10px; color:Navy;
+}
+USN {
+display:block; margin-left:10px;font-size:14pt; color:Red;
+}
+name {
+display:block; margin-left:20px;font-size:14pt; color:Blue;
+}
+college{
+display:block; margin-left:20px;font-size:12pt; color:Maroon;
+}
+branch{
+display:block; margin-left:20px;font-size:12pt; color:Purple;
+}
+year {
+display:block; margin-left:20px;font-size:14pt; color:Green;
+}
+e-mail {
+display:block; margin-left:20px;font-size:12pt; color:Blue;
+}
