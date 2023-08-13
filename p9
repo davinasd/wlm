@@ -1,0 +1,75 @@
+<html>
+<head>
+ <title>Analog Clock Tutorials Point</title>
+ <style>
+ #sizeOfAnalog {
+ position: relative;
+ /*background: 
+url(https://www.tutorialspoint.com/assets/questions/tmp/clock.png) no-repeat; 
+*/
+ background-size: 100%;
+ margin-top: 2%;
+ margin: auto;
+ height: 90vh;
+ width: 90vh;
+ }
+ #hour_clock {
+ position: absolute;
+ background: black;
+ border-radius: 10px;
+ transform-origin: bottom;
+ height: 25%;
+ top: 25%;
+ left: 48.85%;
+ opacity: 0.8;
+ width: 2%;
+ }
+ #minute_clock {
+ position: absolute;
+ background: black;
+ border-radius: 10px;
+ transform-origin: bottom;
+ left: 48.9%;
+ opacity: 0.8;
+ width: 1.6%;
+ height: 32%;
+ top: 18%;
+ }
+ #second_clock {
+ position: absolute;
+ background: black;
+ border-radius: 10px;
+ transform-origin: bottom;
+ width: 1%;
+ height: 36%;
+ top: 14%;
+ left: 50%;
+ opacity: 0.8;
+ }
+ </style>
+</head>
+<body>
+ <div id="sizeOfAnalog">
+ <div id="hour_clock"></div>
+ <div id="minute_clock"></div>
+ <div id="second_clock"></div>
+ </div>
+ <script>
+ var hour = document.getElementById("hour_clock");
+ var minute = document.getElementById("minute_clock");
+ var seconds = document.getElementById("second_clock");
+ var addClock = setInterval(function clock() {
+ var date_now = new Date();
+ var hr = date_now.getHours();
+ var min = date_now.getMinutes();
+ var sec = date_now.getSeconds();
+ var calc_hr = hr * 30 + min / 2;
+ var calc_min = min * 6;
+ var calc_sec = sec * 6;
+ hour.style.transform = "rotate(" + calc_hr + "deg)";
+ minute.style.transform = "rotate(" + calc_min + "deg)";
+ seconds.style.transform = "rotate(" + calc_sec + "deg)";
+ }, 1000);
+ </script>
+</body>
+</html>
